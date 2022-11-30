@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "demo_01"
+	},
+	{
+		"path": "demo_02"
+	}
+],
+  "settings": {
+    "deno.enable": true,
+    "deno.unstable": true
+  }
+}
