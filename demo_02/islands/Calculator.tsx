@@ -74,7 +74,10 @@ export const Calculator = () => {
           type="number"
           value={salaries.a}
           onInput={(e) =>
-            setSalaries({ ...salaries, a: parseInt((e.target as any).value) })
+            setSalaries({
+              ...salaries,
+              a: parseInt((e.target as { value: string }).value),
+            })
           }
         />
       </div>
@@ -85,7 +88,7 @@ export const Calculator = () => {
           type="number"
           value={salaries.b}
           onInput={(e) =>
-            setSalaries({ ...salaries, b: parseInt((e.target as any).value) })
+            setSalaries({ ...salaries, b: parseInt(e.target.value) })
           }
         />
       </div>
@@ -95,7 +98,7 @@ export const Calculator = () => {
           id="fixCosts"
           type="number"
           value={fixCosts}
-          onInput={(e) => setFixCosts(parseInt((e.target as any).value))}
+          onInput={(e) => setFixCosts(parseInt(e.target.value))}
         />
       </div>
       <div class="my-8" />

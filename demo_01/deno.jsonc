@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {},
+  "fmt": {},
+  "importMap": "import-map.json",
+  "lint": {},
+  "test": {},
+  "tasks": {
+    "dev": "deno run --watch src/main.ts"
+  }
+}
